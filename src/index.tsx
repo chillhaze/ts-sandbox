@@ -7,7 +7,7 @@ import "./index.css";
 // import "./files/04-interfaces";
 // import "./files/05-enums";
 // import "./files/06-functions";
-// import "./files/07-classes";
+import "./files/07-classes";
 
 ReactDOM.render(
   <React.StrictMode>

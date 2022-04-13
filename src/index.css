@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  padding: 10px;
+  background-color: #dde8e7;
+  color: #008080;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,213 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  margin: 20px auto 0;
+  padding: 20px 10px;
+  max-width: 600px;
+  border: 1px solid teal;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.btn {
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: #008080;
+  outline: none;
+  border: none;
+
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+
+  border-radius: 3px;
+}
+
+.btn:hover {
+  color: tomato;
+}
+
+.btn:focus-visible,
+.btn:active {
+  background-color: tomato;
+  color: #fff;
+}
+
+/* ColorPicker */
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+}
+
+.color-picker__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 250ms linear;
+}
+
+.color-picker__btn-active {
+  transform: scale(1.1);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  line-height: 30px;
+  margin: 0 5px 10px;
+}
+
+.form__input {
+  display: block;
+  padding: 5px 5px;
+
+  border-color: teal;
+}
+
+.form__input:focus,
+.form__input:focus-visible,
+.form__input:active {
+  display: block;
+  padding: 5px 5px;
+
+  border-color: red;
+  outline-color: red;
+}
+
+/* Todos */
+
+.todos-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Todos Editor */
+.todo-editor__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.todo-editor__textarea {
+  min-height: 50px;
+  max-width: 97%;
+  margin: 0 5px 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-family: inherit;
+  border: 1px solid #008080;
+  border-radius: 3px;
+}
+
+.todo-editor__textarea:active,
+.todo-editor__textarea:focus {
+  /* outline: 1px solid tomato; */
+  outline: 2px solid #008080;
+}
+
+/* Todos Filter */
+.todos-filter {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.todos-filter h2 {
+  text-align: center;
+}
+
+.todos-filter__input {
+  padding: 5px;
+  font-size: 16px;
+
+  border: 1px solid #008080;
+  border-radius: 3px;
+}
+
+.todos-filter__input:active,
+.todos-filter__input:focus {
+  /* outline: 1px solid tomato; */
+  outline: 1px solid #008080;
+}
+
+/* Todos Stats */
+.todos-stats h2 {
+  text-align: center;
+}
+
+.todos-stats__container {
+  display: flex;
+  justify-content: center;
+}
+
+.todos-stats__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todos-stats__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.todos-stats__value {
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: tomato;
+}
+
+.todos-stats__label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #008080;
+}
+
+/* Todo List */
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list__item {
+  margin: 20px auto 0;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #008080;
+  border-radius: 3px;
+  background-color: #d9ebeb;
+}
+
+.todo-list__checkbox {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.todo-list__text {
+  width: 80%;
+  margin: 0 20px 0 0;
+  padding: 0;
 }
